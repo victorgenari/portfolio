@@ -19,6 +19,24 @@ export const Content = styled.div`
     gap: 4rem;
 `
 
+export const DividerBackground = styled.div`
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+export const Divider = styled.div`
+    width: 100%;
+    max-width: 0.3rem;
+    height: 5rem;
+
+    border-radius: 3rem;
+
+    background: #FF0000;
+`
+
 export const NameAndSocialMedias = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,7 +44,7 @@ export const NameAndSocialMedias = styled.div`
     padding: 2rem;
     border-bottom-right-radius: 3rem;
 
-    box-shadow: 5px 8px 12px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 8px 12px 15px rgba(150, 10, 100, 0.1);
 
     @media (max-width: 800px) {
         transition: 2s;
@@ -42,8 +60,7 @@ export const ColorDiv = styled.div`
     border-top-left-radius: 15rem;
     border-bottom-right-radius: 15rem;
 
-    box-shadow: 10px 3px 3px 3px rgba(0, 0, 0, 0.1);
-    background: #00BFFF;
+    background: #A52A2A;
 `
 
 export const ImgAndName = styled.div`
@@ -58,7 +75,7 @@ export const ImgAndName = styled.div`
         border-radius: 50%;
         margin: -5rem 0 0 0;
 
-        box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
     }
 
     @media (max-width: 800px) {
@@ -101,9 +118,9 @@ export const FunctionAndIcons = styled.div`
 
             @keyframes iconsmoving {
                 0%   {color:#000000; left:0px; top:0px;}
-                25%  {color:#00BFFF; left:0.5rem; top:0px;}
+                25%  {color:#FF0000; left:0.5rem; top:0px;}
                 50%  {color:#000000; left:0.5rem; top:0.5rem;}
-                75%  {color:#00BFFF; left:0px; top:0.5rem;}
+                75%  {color:#FF0000; left:0px; top:0.5rem;}
                 100% {color:#000000; left:0px; top:0px;}
             }
         }
@@ -130,7 +147,7 @@ export const PersonalProfileDescriptions = styled.div`
     padding: 0.5rem;
     border-radius: 0.5rem;
 
-    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
 
     span {
         display: none;
@@ -163,7 +180,7 @@ export const PersonalProfileIcon = styled.div`
     padding: 2rem 0;
     border-radius: 0.5rem;
 
-    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
 
     i {
         display: flex;
@@ -209,7 +226,7 @@ export const PersonalGoal = styled.div`
 export const PersonalGoalDescriptions = styled.div`
     border-radius: 0.5rem;
 
-    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
 `
 
 export const ContactsContainer = styled.div`
@@ -279,21 +296,261 @@ export const SocialMedias = styled.div`
 `
 
 export const MainProjects = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin: 0 0 2rem 0;
+    }
+`
+
+export const Cards = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    @media (max-width: 805px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 530px) {
+        grid-template-columns: 1fr;
+    }
+`
+
+export const Card = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
     
+    box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
+
+    h3 {
+        font-weight: 600;
+    }
+
+    p {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 0.5rem;
+    }
 `
 
 export const FeaturedProject = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    width: 100%;
+
+    p {
+        text-align: center;
+        margin: 1rem 0 0 0;
+    }
+`
+
+export const FeaturedProjectImgs = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    margin: 2rem 0 0 0;
+
+    @media (max-width: 628px) {
+        grid-template-columns: 1fr;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+`
+
+export const MobileImage = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        max-width: 15rem;
+    }
+`
+
+export const DesktopImages = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        max-width: 25rem;
+        border-radius: 0.5rem;
+    }
 `
 
 export const ProfessionalHistory = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    h2 {
+        margin: 0 0 1rem 0;
+    }
+`
+
+export const JustOneCard = styled.div`
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    margin: 0 0 2rem 0;
+    border-radius: 0.5rem;
+
+    box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
+
+    @media (max-width: 585px) {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+`
+
+export const ProfessionalHistoryContent = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
+    }
+
+    @media (max-width: 585px) {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+`
+
+export const Span = styled.span`
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
 `
 
 export const AcademicEducation = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    h2 {
+        margin: 0 0 1rem 0;
+    }
+`
+
+export const AcademicEducationContent = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        padding: 1rem;
+        border-radius: 0.5rem;
+
+        box-shadow: 1px 3px 3px 3px rgba(150, 10, 100, 0.1);
+    }
+
+    @media (max-width: 585px) {
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+`
+
+export const SkillsContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    h2 {
+        font-weight: 600;
+        margin: 0 0 2rem 0;
+    }
 `
 
 export const Skills = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
+    width: 100%;
+
+    @media (max-width: 585px) {
+        grid-template-columns: 1fr;
+    }
+`
+
+export const SkillsColumns = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding: 1rem;
+
+    box-shadow: 5px 5px 10px rgba(150, 10, 100, 0.1);
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        img, i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+            max-width: 3rem;
+        }
+    }
+`
+
+export const SkillsInfoAPI = styled.div`
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100%;
+        max-width: 2.5rem;
+
+        display: flex;
+
+        border-radius: 50%;
+
+        background: #FFFFFF;
+    }
 `
