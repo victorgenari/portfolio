@@ -337,11 +337,31 @@ export const Card = styled.div`
     p {
         text-align: center;
         margin: 1rem 0;
+
+        height: 8rem;
+
+        @media (max-width: 985px) {
+            height: 10rem;
+        }
+
+        @media (max-width: 805px) {
+            height: 8rem;
+        }
     }
 
     img {
         width: 100%;
         border-radius: 0.5rem;
+
+        height: 12rem;
+
+        @media (max-width: 530px) {
+            max-width: 70%;
+        }
+
+        @media (max-width: 370px) {
+            max-width: 100%;
+        }
     }
 `
 
