@@ -1,3 +1,5 @@
+<img src="https://github.com/victorgenari/portfolio/blob/main/src/assets/images/portfolio-image.jpg">
+
 # Projeto 'Portfolio' com React.js:
 
 O portfolio foi desenvolvido no intuito de mostrar quais meus objetivos e o que venho estudando atualmente. Na aplicação está detalhando meus contatos, meu perfil pessoal, objetivo profissional, principais projetos, projeto atual de trabalho, histórico profissional, formação acadêmica e minhas habilidades na programação.
