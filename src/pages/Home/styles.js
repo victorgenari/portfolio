@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100%;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -35,6 +36,31 @@ export const Divider = styled.div`
     border-radius: 3rem;
 
     background: #FF0000;
+`
+
+export const HeaderDiv = styled.div`
+    width: 100%;
+    max-width: 1400px;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    padding: 0 0 2rem 0;
+
+    span {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-weight: 600;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        background-image: linear-gradient(red, #001fff, #8406d6);
+        color: transparent;
+    }
 `
 
 export const NameAndSocialMedias = styled.div`
@@ -203,7 +229,7 @@ export const PersonalGoal = styled.div`
         align-items: center;
         justify-content: center;
 
-        p {
+        h2, p {
             font-weight: 600;
         }
 
@@ -302,6 +328,7 @@ export const MainProjects = styled.div`
     justify-content: center;
 
     h2 {
+        font-weight: 600;
         margin: 0 0 2rem 0;
     }
 `
@@ -373,6 +400,10 @@ export const FeaturedProject = styled.div`
 
     width: 100%;
 
+    h2 {
+        font-weight: 600;
+    }
+
     p {
         text-align: center;
         margin: 1rem 0 0 0;
@@ -427,6 +458,7 @@ export const ProfessionalHistory = styled.div`
     justify-content: center;
 
     h2 {
+        font-weight: 600;
         margin: 0 0 1rem 0;
     }
 `
@@ -482,6 +514,7 @@ export const AcademicEducation = styled.div`
     justify-content: center;
 
     h2 {
+        font-weight: 600;
         margin: 0 0 1rem 0;
     }
 `

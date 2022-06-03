@@ -29,13 +29,13 @@ import APIRestFulLogo from '../../assets/images/icons/restapi.png'
 import NodeJSLogo from '../../assets/images/icons/nodejs.svg'
 import MySQLLogo from '../../assets/images/icons/mysql.svg'
 
-
 // CSS
 import {
     Container, Content, NameAndSocialMedias, PersonalProfile, PersonalGoal, ContactsContainer, ContactsContent, FeaturedProject,
     MainProjects, ProfessionalHistory, AcademicEducation, Skills, ImgAndName, FunctionAndIcons, ColorDiv, SocialMedias, IconAndTitle,
-    PersonalProfileIcon, PersonalProfileDescriptions, PersonalGoalDescriptions, Cards, Card, Divider, DividerBackground, FeaturedProjectImgs, MobileImage, DesktopImages,
-    ProfessionalHistoryContent, AcademicEducationContent, Span, JustOneCard, SkillsInfo, SkillsInfoAPI, SkillsColumns, SkillsContainer
+    PersonalProfileIcon, PersonalProfileDescriptions, PersonalGoalDescriptions, Cards, Card, Divider, DividerBackground, FeaturedProjectImgs,
+    MobileImage, DesktopImages, ProfessionalHistoryContent, AcademicEducationContent, Span, JustOneCard, SkillsInfoAPI,
+    SkillsColumns, SkillsContainer, HeaderDiv
 } from "./styles";
 
 
@@ -56,6 +56,13 @@ export function Home() {
 
     return (
         <Container>
+
+            <HeaderDiv>
+                <span>&lt;</span>
+                <h1>Victor Genari</h1>
+                <span>&gt;</span>
+            </HeaderDiv>
+
             <Content>
 
                 <NameAndSocialMedias>
@@ -68,12 +75,12 @@ export function Home() {
                         <h2>{personalApi.name}</h2>
                         <p>Frontend Developer</p>
                         <div>
-                            <a href="https://www.linkedin.com/in/victorgenari/" target="_blank"><BsLinkedin size={25} /></a>
-                            <a href="https://www.github.com/victorgenari" target="_blank"><BsGithub size={25} /></a>
-                            <a href="mailto:victor.olr@hotmail.com" target="_blank"><FaMailBulk size={28} /></a>
+                            <a href="https://www.linkedin.com/in/victorgenari/" target="_blank" rel="noreferrer"><BsLinkedin size={25} /></a>
+                            <a href="https://www.github.com/victorgenari" target="_blank" rel="noreferrer"><BsGithub size={25} /></a>
+                            <a href="mailto:victor.olr@hotmail.com" target="_blank" rel="noreferrer"><FaMailBulk size={28} /></a>
                             <a href="https://api.whatsapp.com/send?phone=++5511960343362&text=Olá! Este é o contato de Victor Genari .."
-                                target="_blank"><RiWhatsappFill size={32} /></a>
-                            <a href="https://steamcommunity.com/id/k1genari/" target="_blank"><FaSteam size={28} /></a>
+                                target="_blank" rel="noreferrer"><RiWhatsappFill size={32} /></a>
+                            <a href="https://steamcommunity.com/id/k1genari/" target="_blank" rel="noreferrer"><FaSteam size={28} /></a>
 
                         </div>
                     </FunctionAndIcons>
@@ -123,13 +130,13 @@ export function Home() {
 
                         <SocialMedias>
                             <div>
-                                <a href="mailto:victor.olr@hotmail.com" target="_blank"><FaMailBulk size={28} /> victor.olr@hotmail.com</a>
-                                <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.5996163,-46.6518251,10.75z/data=!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5557714!4d-46.6395571" target="_blank"><BiCurrentLocation size={30} /> São Paulo - Brasil</a>
+                                <a href="mailto:victor.olr@hotmail.com" target="_blank" rel="noreferrer"><FaMailBulk size={28} /> victor.olr@hotmail.com</a>
+                                <a href="https://www.google.com/maps/place/S%C3%A3o+Paulo,+SP/@-23.5996163,-46.6518251,10.75z/data=!4m5!3m4!1s0x94ce448183a461d1:0x9ba94b08ff335bae!8m2!3d-23.5557714!4d-46.6395571" target="_blank" rel="noreferrer"><BiCurrentLocation size={30} /> São Paulo - Brasil</a>
                             </div>
 
                             <div>
-                                <a href="https://www.linkedin.com/in/victorgenari/" target="_blank"><BsLinkedin size={28} /> linkedin.com/in/victorgenari</a>
-                                <a href="https://github.com/victorgenari" target="_blank"><BsGithub size={28} /> github.com/victorgenari</a>
+                                <a href="https://www.linkedin.com/in/victorgenari/" target="_blank" rel="noreferrer"><BsLinkedin size={28} /> linkedin.com/in/victorgenari</a>
+                                <a href="https://github.com/victorgenari" target="_blank" rel="noreferrer"><BsGithub size={28} /> github.com/victorgenari</a>
                             </div>
                         </SocialMedias>
                     </ContactsContent>
